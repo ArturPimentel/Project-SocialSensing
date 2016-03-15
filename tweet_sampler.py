@@ -8,12 +8,12 @@ json = import_simplejson()
 
 # Please assign your keys strings to the variables below
 # Consumer keys
-consumer_key = "brJuLeztTTpno1Hz1Ni8Q4Q32"
-consumer_secret = "8IQYpmH5uAnSNpwZCQEdcBZNCbtinGTwXOV6fh0F3J5J6Ph9x9"
+consumer_key = ""
+consumer_secret = ""
 
 # Access keys
-access_token="4870188693-nwxEmTrGC4WKAgzXCgxXbAEHfMOB5we4er8441S"
-access_token_secret="wfxWgX8ooHZy5W2ud5Bu7LeC2euhw9IgeoeH3PEvg0DCA"
+access_token=""
+access_token_secret=""
 
 lon = 0
 lat = 1
@@ -35,7 +35,7 @@ class StdOutListener(StreamListener):
 			if text is None:
 				return True
 			else:
-				if self.n_good_tweets < 40000:
+				if self.n_good_tweets < 50000:
 					#print str(self.n_good_tweets) + ". " + text.encode("utf-8")
 					print raw_data
 					self.n_good_tweets += 1
